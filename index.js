@@ -1,4 +1,8 @@
-const name = document.getElementById('juan');
+const cardElement = document.querySelectorAll('.card');
+
+cardElement.forEach(e => {
+   e.addEventListener('click', () => alert('working'))
+
+})
 
 
-name.addEventListener('click', () => alert('workign'))
