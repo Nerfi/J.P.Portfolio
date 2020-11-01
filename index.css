@@ -20,34 +20,7 @@
 
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-}
 
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-
-/* porjects container */
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-
-}
-
-
-.projects_title {
-  text-align:center;
-  margin: 20px;
-}
 
 
  /* Footer */
@@ -56,3 +29,99 @@ img {
   justify-content: space-around;
   margin:20px
  }
+ .projects_title {
+
+  text-align: center;
+ }
+
+/* new CSS from the tutorial */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.cards__single {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.cards__single:hover {
+   box-shadow: 0 5px 18px rgba(0,0,0,0.6);
+
+}
+
+
+.card__image {
+  text-align: center;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.cards__front img {
+  margin: 0;
+  height: 350px;
+}
+
+/* hidden the back of the card */
+.cards__front, .cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.cards__front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+/* hidding the back of the card */
+.cards__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+}
+
+/* flipping the card in click , this is the css property we'll add to it */
+
+.cards__single.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+
+/* media querys */
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    perspective: 1000px;
+    align-items: stretch;
+  }
+
+  .cards__single {
+    width: 20%;
+  }
+}
