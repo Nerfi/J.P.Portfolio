@@ -158,7 +158,7 @@ h1 {
 
 .technologies__title {
   text-align: center;
-  margin-top: 25px;
+  margin: 50px;
   color: #79d70f;
 }
 
@@ -254,6 +254,7 @@ h1 {
 .topnav a {
   float: left;
   color: black;
+  font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -268,6 +269,7 @@ h1 {
 
 .contatc__title {
   text-align: center;
+  margin: 50px;
 }
 
 .scroll{
