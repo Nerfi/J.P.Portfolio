@@ -240,3 +240,39 @@ h1 {
 .description {
   margin-top: 15px;
 }
+
+/* styling the navbar */
+.topnav {
+   position: sticky;
+  top: 0;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* change the color of the elements on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.contatc__title {
+  text-align: center;
+}
+
+.scroll{
+
+ background-color: #e8e8e8;
+
+}
+
