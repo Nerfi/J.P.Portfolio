@@ -1,4 +1,11 @@
+//selectors
+const stack = document.querySelector('.techStack');
 const cards = document.querySelectorAll(".cards__single");
+const projectSection = document.querySelector(".projects_title > h1");
+
+//converting the h1 into an uppercase word, just for fun
+const inner = projectSection.innerText;
+projectSection.innerHTML = inner.toUpperCase();
 
 //creating the flip function
 
@@ -22,20 +29,18 @@ bg.appendChild(title);
 const techStack = ['React', 'Git', 'Boostrap', 'React Hooks', 'firebase', 'HTML', 'CSS', 'JS'];
 let text = "";
 
-function iteration() {
+let i = 0;
+setInterval(function() {
 
-  setTimeout(function (){
-
-    for(let i = 0; i < techStack.length; i++) {
-      text += techStack[i] + "<br>";
-    };
-      const stack = document.querySelector('.techStack');
-      stack.innerHTML =  text;
-
+    if( i >= techStack.length){
+      i = 0;
+      text = [];
+    }
+    text += techStack[i] + ", ";
+    stack.innerHTML =  text;
+    i++;
   },2000)
 
 
 
-}
-iteration();
 

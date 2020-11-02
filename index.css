@@ -1,13 +1,16 @@
 * {
   margin: 0;
 }
-.bg {
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+}
 
+.bg {
   height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-image: url("backgroundImg.svg");
 }
 
 
@@ -18,15 +21,16 @@
   display: flex;
   justify-content: space-around;
   margin: 30px;
-  padding-top: 50px;
+  padding-top: 80px;
   height: 100px;
-  border-style: double;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
  }
 
  .projects_title {
 
   text-align: center;
+  margin: 60px;
  }
 
 /* new CSS from the tutorial */
@@ -37,6 +41,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .cards__single {
@@ -58,15 +63,16 @@
 }
 
 
-.card__image {
+.cards__image {
   text-align: center;
   width: 100%;
-  border-radius: 50px;
+
+  border-radius: 30px;
 }
 
 .cards__front img {
   margin: 0;
-  height: 350px;
+  height: 250px;
 }
 
 /* hidden the back of the card */
@@ -126,4 +132,111 @@
   .cards__single {
     width: 20%;
   }
+}
+
+/* footer media querys */
+@media (max-width: 768px) {
+  footer > p {
+    display:flex;
+    flex-direction: column;
+
+  }
+
+   .technologies__container {
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   .technologies__container > img {
+      margin-left: 150px;
+      padding: 20px;
+
+   }
+
+}
+
+.technologies__title {
+  text-align: center;
+  margin-top: 25px;
+  color: #79d70f;
+}
+
+/* Footer Icons */
+.fa {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.author,.email {
+  font-size: 25px;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
+.name, .techStack {
+  padding-left: 45vh;
+  font-weight: bold;
+
+}
+
+.techStack {
+  margin-top: 15px;
+  font-size: 23px;
+  font-family: 'Syne Tactile', cursive;
+}
+
+
+.cards__artist {
+  margin: 15px;
+}
+
+.cards__album  {
+  margin: 20px;
+}
+
+.cards__back > h2 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
+.order__list > li {
+  font-family: 'Syne Tactile', cursive;
+
+}
+
+/* technologies section */
+.technologies__container > img {
+  width: 100px;
+}
+
+.technologies__container {
+  display:  flex;
+  justify-content: space-around;
+  padding: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.technologies__container:hover {
+ box-shadow: 0 5px 18px rgba(0,0,0,0.6);
+
+}
+
+/* add display grid on Mobile or small devices */
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+
+}
+
+.links > a {
+  text-decoration: none;
+  color: black;
+}
+
+.description {
+  margin-top: 15px;
 }
