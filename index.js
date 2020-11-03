@@ -35,8 +35,9 @@ setInterval(function() {
 
     if( i >= techStack.length){
       i = 0;
-      text = [];
+      text = "";
     }
+
     text += techStack[i] + ", ";
     stack.innerHTML =  text;
     i++;
