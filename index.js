@@ -26,7 +26,6 @@ title.innerText = 'Juan Fco Paredes';
 bg.appendChild(title);
 
 //setInterval function
-
 const techStack = ['React', 'Git', 'Boostrap', 'React Hooks', 'firebase', 'HTML', 'CSS', 'JS'];
 let text = "";
 
@@ -48,5 +47,12 @@ setInterval(function() {
 
 // scrool event on topnav class name
 window.addEventListener('scroll', function() {
-  navbarElement.classList.toggle('scroll');
+  if(document.documentElement.scrollTop >= 60) {
+
+    navbarElement.classList.add('scroll')
+
+  } else {
+    navbarElement.classList.remove('scroll')
+  }
 })
+
