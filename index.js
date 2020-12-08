@@ -27,8 +27,8 @@ bg.appendChild(title);
 
 //adding pjob title
 const jobTitle = document.querySelector('.job');
-const title = document.createElement('H2');
-title.innerText = 'Front-End Developer';
+const titleJob = document.createElement('H2');
+titleJob.innerText = 'Front-End Developer';
 jobTitle.appendChild(title);
 
 //setInterval function
