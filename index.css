@@ -34,7 +34,6 @@ h1 {
  }
 
 /* new CSS from the tutorial */
-
 .cards {
   display: flex;
   flex-direction: column;

@@ -25,6 +25,12 @@ const title = document.createElement('H1');
 title.innerText = 'Juan Fco Paredes';
 bg.appendChild(title);
 
+//adding pjob title
+const jobTitle = document.querySelector('.job');
+const title = document.createElement('H2');
+title.innerText = 'Front-End Developer';
+jobTitle.appendChild(title);
+
 //setInterval function
 const techStack = ['React', 'Git', 'Boostrap', 'React Hooks', 'firebase', 'HTML', 'CSS', 'JS'];
 let text = "";
