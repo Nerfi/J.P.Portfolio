@@ -59,12 +59,6 @@ h1 {
 }
 
 
-.cards__single:hover {
-   box-shadow: 0 5px 18px rgba(0,0,0,0.6);
-
-}
-
-
 .cards__image {
   text-align: center;
   width: 100%;
