@@ -14,7 +14,10 @@ h1 {
 }
 
 
-
+/* navbar items */
+.item {
+  font-family: sans-serif;
+}
 
  /* Footer */
  footer {
