@@ -282,8 +282,9 @@ h1 {
 
 .scroll{
 
- background-color: #e8e8e8;
+ background-color: white;
  overflow: auto;
+ border-style: none none solid none
 
 }
 
@@ -295,9 +296,11 @@ h1 {
 /* test */
 
 .ocean {
-  height: 50%;
- position:absolute;
+  height: 30%;
+
+  position:absolute;
   background: #015871;
+
 }
 
 .wave {
@@ -307,6 +310,7 @@ h1 {
   width: 1554px;
   height: 198px;
   animation:  wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53)  infinite;
+
 }
 
 
@@ -333,5 +337,6 @@ h1 {
     transform: translate3d(0,5px,0);
   }
 }
+
 
 
