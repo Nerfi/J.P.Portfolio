@@ -104,6 +104,16 @@ h1 {
   flex-direction: flex-start;
   padding-top: 100px;
 
+  &__blinker {
+    animation: blinker 0.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+
+    @keyframes blinker {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+
 }
 /* flipping the card in click , this is the css property we'll add to it */
 
@@ -281,7 +291,7 @@ h1 {
 }
 
 .scroll{
- background-color: white;
+  background-color: white;
  overflow: auto;
 }
 
@@ -292,17 +302,6 @@ h1 {
 
 /* test */
 
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
 .waveWrapper {
     overflow: hidden;
     position: absolute;
@@ -340,12 +339,14 @@ h1 {
 }
 .waveTop {
     background-size: 50% 100px;
+
 }
 .waveAnimation .waveTop {
   animation: move-wave 3s;
    -webkit-animation: move-wave 3s;
    -webkit-animation-delay: 1s;
    animation-delay: 1s;
+   color:red;
 }
 .waveMiddle {
     background-size: 50% 120px;
@@ -360,6 +361,17 @@ h1 {
     animation: move_wave 15s linear infinite;
 }
 
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
 /* aqui acaban los waves effects */
 
 
@@ -371,7 +383,6 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
   animation-duration: 5s;

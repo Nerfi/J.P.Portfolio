@@ -1,3 +1,18 @@
+//packages
+//import {TextScramble} from '@twistezo/text-scramble'
+//const textEffect = require('@twistezo/text-scramble')
+
+//not working I'm stupid
+//new TextScramble(
+  //'scramble__text',
+  //['Lorem ipsum 1', 'Lorem ipsum 2', 'Lorem ipsum 3'],
+  //5,
+  //100,
+  //1500
+//)
+
+
+
 //selectors
 const stack = document.querySelector('.techStack');
 const cards = document.querySelectorAll(".cards__single");
