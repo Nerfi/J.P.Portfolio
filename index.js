@@ -3,6 +3,7 @@ const stack = document.querySelector('.techStack');
 const cards = document.querySelectorAll(".cards__single");
 const projectSection = document.querySelector(".projects_title > h1");
 const navbarElement = document.querySelector(".topnav");
+const slideUpSection = document.getElementById('cardsSection');
 
 //converting the h1 into an uppercase word, just for fun
 const inner = projectSection.innerText;
@@ -46,30 +47,34 @@ setInterval(function() {
 
 
 
-// scrool event on topnav class name
-window.addEventListener('scroll', function() {
-  if(document.documentElement.scrollTop >= 60) {
+
+//on scroll navbar function
+//refactor this function with toggle
+function navbarScroll() {
+
+  if( document.documentElement.scrollTop >= 60) {
 
     navbarElement.classList.add('scroll')
 
   } else {
     navbarElement.classList.remove('scroll')
   }
-})
+}
 
 
-//adding scroll effect in order to load section when the user gets there
-//window.addEventListener('scroll', function() {
-  //parece que hemos conseguido saber en que posicion estan las card
-  //if ((window.innerHeight + window.scrollY) == 1000  ) {
-    //  alert("you're at the bottom of the page");
-    //}
-//})
+console.log(slideUpSection.childNodes , 'slideUpSection')
 
+//new onScrolll event
+function slideinOnScroll() {
+  if(  document.documentElement.scrollTop > 250) {
 
+    slideUpSection.className = 'slideUp';
 
-window.onscroll = function(ev) {
+  }
+}
 
-    console.log(window.pageYOffset); //692
-    if(window.pageYOffset == 692) alert("youre"); //acabamos de coger a que distancia tenemos que cargar los documentos.
-};
+//calling the funciton when the windows object reachs the target
+window.addEventListener('scroll', slideinOnScroll);
+//calling function when navbar reach target.
+window.addEventListener('scroll', navbarScroll);
+
