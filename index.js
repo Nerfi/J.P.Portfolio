@@ -56,17 +56,17 @@ function navbarScroll() {
 
     navbarElement.classList.add('scroll')
 
-  } else {
+  }else {
     navbarElement.classList.remove('scroll')
   }
 }
 
 
-console.log(slideUpSection.childNodes , 'slideUpSection')
+
 
 //new onScrolll event
 function slideinOnScroll() {
-  if(  document.documentElement.scrollTop > 250) {
+  if( document.documentElement.scrollTop > 250) {
 
     slideUpSection.className = 'slideUp';
 
