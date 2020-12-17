@@ -31,9 +31,9 @@ h1 {
  }
 
  .projects_title {
-
   text-align: center;
-  margin: 60px;
+  margin: 100px;
+  padding: 60px;
  }
 
 /* new CSS from the tutorial */
@@ -44,6 +44,10 @@ h1 {
   align-content: center;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bigDiv {
+  background-image:  url('Animated-Shape6.svg');
 }
 
 .cards__single {
@@ -99,7 +103,7 @@ h1 {
 }
 
 
-.name {
+/*.name {
   display: flex;
   flex-direction: flex-start;
   padding-top: 100px;
@@ -115,6 +119,8 @@ h1 {
   }
 
 }
+*/
+
 /* flipping the card in click , this is the css property we'll add to it */
 
 .cards__single.flip {
@@ -189,6 +195,10 @@ h1 {
   padding-left: 45vh;
   font-weight: bold;
 
+}
+/* temporary css for name later needs to be added cool effect */
+.name {
+  margin-top: 70px;
 }
 
 .techStack {
@@ -304,7 +314,6 @@ h1 {
 
 .waveWrapper {
     overflow: hidden;
-    position: absolute;
     left: 0;
     right: 0;
     bottom: -55px;

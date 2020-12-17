@@ -45,26 +45,24 @@ bg.appendChild(title);
 //setInterval function
 const techStack = ['React', 'Git', 'Boostrap', 'React Hooks', 'firebase', 'HTML', 'CSS', 'JS'];
 let text = "";
-
 let i = 0;
-setInterval(function() {
 
-    if( i >= techStack.length){
+function iterateOverTechStack() {
+
+   if( i >= techStack.length){
       i = 0;
       text = "";
     }
 
     text += techStack[i] + ", ";
     stack.innerHTML =  text;
-    i++;
-  },2000)
+   i++;
+}
 
-
-
+setInterval(iterateOverTechStack,2000);
 
 
 //on scroll navbar function
-//refactor this function with toggle
 function navbarScroll() {
 
   if( document.documentElement.scrollTop >= 60) {
@@ -76,17 +74,11 @@ function navbarScroll() {
   }
 }
 
-
-
-
 //new onScrolll event
 function slideinOnScroll() {
-  if( document.documentElement.scrollTop > 250) {
-
-    slideUpSection.className = 'slideUp';
-
-  }
+  if( document.documentElement.scrollTop > 248)  slideUpSection.className = 'slideUp';
 }
+
 
 //calling the funciton when the windows object reachs the target
 window.addEventListener('scroll', slideinOnScroll);
