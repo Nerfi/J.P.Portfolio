@@ -1,11 +1,10 @@
-
-
 //selectors
 const stack = document.querySelector('.techStack');
 const cards = document.querySelectorAll(".cards__single");
 const projectSection = document.querySelector(".projects_title > h1");
 const navbarElement = document.querySelector(".topnav");
 const slideUpSection = document.getElementById('cardsSection');
+
 
 //converting the h1 into an uppercase word, just for fun
 const inner = projectSection.innerText;
