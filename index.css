@@ -45,6 +45,7 @@ h1 {
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+/* this div wraps the whole porjects part component */
 
 .bigDiv {
   background-image:  url('Animated-Shape6.svg');
@@ -60,6 +61,7 @@ h1 {
   text-align: center;
   -webkit-transition: transform 0.6s;
   transform-style: preserve-3d;
+  width: 50px;
 }
 
 
@@ -271,13 +273,15 @@ h1 {
 
 /* styling the navbar */
 .topnav {
-   position: sticky;
+  position: sticky;
   top: 0;
-  background-color: transparent;
+  background-color: #f1f1f1;
   overflow: hidden;
   display: flex;
   justify-content: center;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 50px;
+  height: 60px;
 }
 
 /* Style the links inside the navigation bar */
