@@ -11,7 +11,6 @@ const inner = projectSection.innerText;
 projectSection.innerHTML = inner.toUpperCase();
 
 //creating the flip function
-
 function flipCard() {
   this.classList.toggle("flip");
 }

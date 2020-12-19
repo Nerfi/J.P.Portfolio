@@ -2,7 +2,6 @@
   margin: 0;
 }
 h1 {
-  /*font-family: 'Alfa Slab One', cursive;*/
   font-family: 'Bungee Outline', cursive;
 }
 
@@ -82,7 +81,6 @@ h1 {
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -108,7 +106,6 @@ h1 {
   font-family: 'Langar', cursive;
   font-size: 45px;
 }
-/*TEST */
 .techSection{
   background-image: url('Wave-Line.svg');
 }
@@ -161,30 +158,24 @@ h1 {
   footer > p {
     display:flex;
     flex-direction: column;
-
   }
 
    .technologies__container {
     display: flex;
     flex-direction: column;
-
-
    }
 
    .technologies__container > img {
       margin-left: 150px;
       padding: 20px;
-
    }
 
+    #cardsSection {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
-@media(max-width: 768px) {
-  #cardsSection {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .technologies__title {
   text-align: center;
@@ -213,7 +204,6 @@ h1 {
 .name, .techStack {
   padding-left: 45vh;
   font-weight: bold;
-
 }
 /* temporary css for name later needs to be added cool effect */
 .name {
@@ -226,7 +216,6 @@ h1 {
   font-family: 'Syne Tactile', cursive;
   color: #79d70f;
 }
-
 
 .cards__artist {
   margin: 15px;
@@ -264,8 +253,6 @@ h1 {
  box-shadow: 0 5px 18px rgba(0,0,0,0.6);
 
 }
-
-/* add display grid on Mobile or small devices */
 
 .links {
   display: flex;
@@ -332,7 +319,7 @@ h1 {
 }
 
 
-/* test */
+/* waves effect start */
 
 .waveWrapper {
     overflow: hidden;
@@ -377,7 +364,6 @@ h1 {
    -webkit-animation: move-wave 3s;
    -webkit-animation-delay: 1s;
    animation-delay: 1s;
-   color:red;
 }
 .waveMiddle {
     background-size: 50% 120px;
@@ -403,7 +389,6 @@ h1 {
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
-/* aqui acaban los waves effects */
 
 
 /* Slide in effect css*/
@@ -443,8 +428,6 @@ h1 {
     -webkit-transform: translateY(0%);
   }
 }
-
-/* aqui acaba el slide up effect */
 
 
 
