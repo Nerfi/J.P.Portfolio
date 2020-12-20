@@ -1,9 +1,6 @@
 * {
   margin: 0;
 }
-h1 {
-  font-family: 'Bungee Outline', cursive;
-}
 
 .bg {
   height: 40rem;
@@ -13,13 +10,11 @@ h1 {
   background-image: url("backgroundImg.svg");
 }
 
-
 /* navbar items */
 .item {
   font-family: sans-serif;
 }
 
- /* Footer */
  footer {
   display: flex;
   justify-content: space-around;
@@ -33,10 +28,11 @@ h1 {
  .projects_title {
   text-align: center;
   margin: 100px;
+  font-family: 'Carter One', cursive;
   padding: 60px;
  }
 
-/* new CSS from the tutorial */
+/* new CSS for cards*/
 .cards {
   display: flex;
   flex-direction: column;
@@ -46,7 +42,6 @@ h1 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-/* this div wraps the whole projects part component */
 .bigDiv {
   background-image:  url('Animated-Shape6.svg');
 }
@@ -83,7 +78,6 @@ h1 {
   flex-direction: column;
 }
 
-
 .cards__front {
   height: 100%;
   transform: rotateX(0deg);
@@ -106,9 +100,7 @@ h1 {
   font-family: 'Langar', cursive;
   font-size: 45px;
 }
-.techSection{
-  background-image: url('Wave-Line.svg');
-}
+
 
 /* flipping the card in click , this is the css property we'll add to it */
 .cards__single.flip {
@@ -136,24 +128,54 @@ h1 {
   }
 }
 
-
-/* not working the diplay property */
-
-@media(max-width: 480px) {
+@media(max-width: 580px) {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+    width: 550px;
   }
   .cards__single {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: blue;
+
+    width: 265px;
+  }
+
+  .cards__back {
+    text-align: center;
+    align-content: center;
+  }
+  .waveWrapperInner {
+    left: 0;
+    right: 0;
+    bottom: -40rem;
+    top: 0px;
+    margin: auto;
+    z-index: -1;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+}
+  .wave {
+   margin-top: -50px;
+  }
+
+
+/* need to be on a phone to actually do this */
+@media(max-width: 480px) {
+  .cards__single {
+    background-color: yellow;
   }
 }
 
 
-
-/* footer media querys */
+/* footer */
 @media (max-width: 768px) {
   footer > p {
     display:flex;
@@ -179,6 +201,7 @@ h1 {
 
 .technologies__title {
   text-align: center;
+  font-family: 'Carter One', cursive;
   margin: 50px;
   padding: 30px;
   font-size: 35px;
@@ -213,7 +236,6 @@ h1 {
 .techStack {
   margin-top: 15px;
   font-size: 23px;
-  font-family: 'Syne Tactile', cursive;
   color: #79d70f;
 }
 
@@ -240,8 +262,6 @@ h1 {
   width: 100px;
 }
 
-
-
 .technologies__container {
   display:  flex;
   justify-content: space-around;
@@ -258,7 +278,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
-
 }
 
 .links > a {
@@ -295,7 +314,8 @@ h1 {
   font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-family: 'Carter One', cursive;
+  font-size: 20px;
 }
 
 /* change the color of the elements on hover */
@@ -307,6 +327,7 @@ h1 {
 .contatc__title {
   text-align: center;
   margin: 50px;
+  font-family: 'Carter One', cursive;
 }
 
 .scroll{
@@ -320,7 +341,6 @@ h1 {
 
 
 /* waves effect start */
-
 .waveWrapper {
     overflow: hidden;
     left: 0;
